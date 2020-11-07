@@ -1,0 +1,129 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="{% static '/css/main.css'%}" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">Home</a>
+    <a href="#mine"> Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  </script>
+  <br>
+  <div>
+    <center><img src="{% static '/images/dog.jpg' %}" alt="Avatar" class="avatar"></center>
+  </div>
+  <br>
+  <div class="intro"><center>Front-End Developer | Artist</center></div>
+  <br>
+  <div class="pro">
+    <h2 class="mine" id="mine"><center>My Skills</center></h2>
+    <p>HTML</p>
+    <div class="container">
+      <div class="skills html">90%</div>
+    </div>
+    <p>CSS</p>
+    <div class="container">
+      <div class="skills css">80%</div>
+    </div>
+    <p>JavaScript</p>
+    <div class="container">
+      <div class="skills js">65%</div>
+    </div>
+    <p>ReactJs</p>
+    <div class="container">
+      <div class="skills reactjs">60%</div>
+    </div>
+    <p>Python</p>
+    <div class="container">
+      <div class="skills python">75%</div>
+    </div> 
+    <p>Django</p>
+    <div class="container">
+      <div class="skills django">70%</div>
+    </div> 
+  </div>
+  <br>
+  <br>
+  <div id="projects"><center>
+    <h2>PROJECTS</h2>
+    </center>
+    <br>
+  </div>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="{% static '/images/whatsappclone.png' %}" alt="whatsappclone" style="width:100%">
+      <div class="container">
+        <h2>Whatsapp-clone</h2>
+        <p class="title">ReactJs</p>
+        <p>Built whatsapp clone using javascript library ReactJs and Firebase.
+          In this I've added google authentication. Deployed a React app with Firebase Hosting.
+        </p>
+        <p><a class="button"href="https://whatsapp-clone-8a940.web.app/" >Link to whatsappclone</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="{% static '/images/netflixclone.png' %}" alt="netflixclone" style="width:100%">
+      <div class="container">
+        <h2>Netflix-clone</h2>
+        <p class="title">ReactJs</p>
+        <p>Built Netflix clone using javascript library ReactJs and Firebase.
+          Real-time database with Firebase’s Firestore. Deployed a React app with Firebase Hosting.
+        </p>
+        <p><a class="button" href="https://netflix-clone-e9533.web.app/">Link to netflixclone</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="{% static '/images/artistwebsite.png' %}" alt="artistwebsite" style="width:100%">
+      <div class="container">
+        <h2>Artist Website</h2>
+        <p class="title">HTML,CSS,JavaScript</p>
+        <p>This is a an artist website which i built using HTML,CSS and JavaScript.
+          I haven't hosted it yet but here is a link to my Github Repository.
+        </p>
+        
+        <p><a class="button" href="https://github.com/Kanika-Mittal15/My-Website">Github Repository</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <footer id="contact" class="w3-container w3-padding-64 w3-center w3-black w3-xlarge" style="background-color: grey;">
+    
+    <a href="https://github.com/Kanika-Mittal15"class="foot"><i class="fa fa-github"></i></a>
+    <a href="https://www.instagram.com/_kanikart_/?hl=en"class="foot"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/in/kanika-mittal-9757641b3/"class="foot"><i class="fa fa-linkedin"></i></a>
+  </footer>
+  
+
+</body>
+</html>
